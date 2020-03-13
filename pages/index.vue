@@ -8,6 +8,9 @@
       <h2 class="subtitle">
         realtimechat app
       </h2>
+      <h3 class="subtitle">
+        たかしといつきのスパルタコード塾
+      </h3>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
