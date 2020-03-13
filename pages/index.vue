@@ -9,7 +9,7 @@
         realtimechat app
       </h2>
       <h3 class="subtitle">
-        たかしといつきのスパルタコード塾
+        たかし&いつきのスパルタコード塾
       </h3>
       <div class="links">
         <a
