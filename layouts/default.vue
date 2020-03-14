@@ -1,55 +1,42 @@
 <template>
-  <div>
-    <nuxt />
+  <!-- 大枠のwrap -->
+  <div id="wrap">
+    <!-- header -->
+    <header>
+      <h3>Nuxt.js&firebaseで作る!リアルタイムチャット</h3>
+    </header>
+    <!-- main -->
+    <main>
+      <nuxt />
+    </main>
+    <!-- footer -->
+    <footer>
+      <p>
+        <small>&copy; 2020 takashi&narita nuxt-learn-projects</small>
+      </p>
+    </footer>
   </div>
 </template>
 
 <style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
+ *{
+   margin: 0;
+   padding: 0;
+ }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-}
+ #wrap{
+   margin: 0 auto;
+   background-color: #eee;
+ }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
+  header{
+    background: #26A69A;
+    color: #fff;
+    padding: 16px;
+  }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
+  footer{
+    text-align: center;
+    padding: 16px;
+  }
 </style>
