@@ -1,23 +1,25 @@
 <template>
   <div id="container">
-    <!-- チャットルーム作成 -->
+    <!-- コメントを追加 -->
     <div class="pa-4">
       <div class="pa-4 d-flex">
-          <input id="text1" type="text" placeholder="チャットルームを入力">
-          <button class="btn-flat-border">追加する</button>
+          <input id="text1" type="text" placeholder="コメントを入力">
+          <button class="btn-flat-border">送信する</button>
       </div>
     </div>
-    <!-- スレッド一覧 -->
-    <div id="treadbox">
-      <h3>チャットルーム一覧</h3>
+    <!-- チャットルーム -->
+    <div id="chatbox">
+      <div class="d-flex px-4">
+        <h3>チャットタイトル</h3>
+        <div class="flex-grow"></div>
+        <button @click="$router.push('/')" class="btn-flat-border">ホームへ戻る</button>
+      </div>
       <div class="container">
-        <!-- スレッド -->
-        <div class="cardbox" v-for="n in 8" :key="n">
-          <h3>これはチャットタイトル</h3>
-          <div align="end">
-            <!-- ボタンを押したらチャットルームとチャットルームの情報が入れ替わる的な -->
-            <button class="btn-flat-border" @click.stop="$router.push('/chatroom')">詳しくみる</button>
-          </div>
+        <div class="cardbox" v-for="n in 5" :key="n">
+          <h4>ユーザーネームさん</h4>
+          <p class="pa-4">
+            これはテストメッセージです。
+          </p>
         </div>
       </div>
     </div>
@@ -25,29 +27,21 @@
 </template>
 
 <script>
-
 export default {
-  data(){
-    return{
-    }
-  }
+
 }
 </script>
 
 <style scoped>
-  h3,h4{
+  h3{
     color: #37474F;
   }
   #container{
     width: 1000px;
     margin: 16px auto;
   }
-  #treadbox{
+  #chatbox{
     padding: 16px;
-  }
-  #treadbox .container{
-    overflow: scroll;
-    height: 100%;
   }
   .cardbox{
     background-color: #fff;
@@ -83,5 +77,12 @@ export default {
     border-radius: 3px; /*ボックス角の丸み*/
     border: 2px solid #ddd; /*枠線*/
     box-sizing: border-box; /*横幅の解釈をpadding, borderまでとする*/
+  }
+  .flex-grow{
+    margin: 0 auto;
+  }
+
+  .px-4{
+    padding: 0 16px;;
   }
 </style>
