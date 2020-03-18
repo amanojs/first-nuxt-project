@@ -4,7 +4,7 @@
     <div class="pa-4">
       <div class="pa-4 d-flex">
         <input id="text1" type="text" placeholder="コメントを入力" />
-        <button class="btn-flat-border" @click="sendChat(payload)">
+        <button class="btn-flat-border" @click="sendChat({ payload })">
           送信する
         </button>
       </div>
