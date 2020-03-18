@@ -3,7 +3,7 @@
   <div id="wrap">
     <!-- header -->
     <header>
-      <h3>Nuxt.js&firebaseで作る!リアルタイムチャット</h3>
+      <h3 class="mx-4">Nuxt.js&firebaseで作る!リアルタイムチャット</h3>
     </header>
     <!-- main -->
     <main>
@@ -25,14 +25,30 @@
  }
 
  #wrap{
-   margin: 0 auto;
-   background-color: #eee;
+   background-color: #fafafa;
  }
 
   header{
     background: #26A69A;
     color: #fff;
     padding: 16px;
+    display: flex;
+  }
+
+  header .flex-grow{
+    flex-grow: 1;
+  }
+
+  .mx-auto{
+    margin: 0 auto;
+  }
+
+  .mx-4{
+    margin: 0 16px;
+  }
+
+  .mx-12{
+    margin: 0 48px;
   }
 
   footer{
